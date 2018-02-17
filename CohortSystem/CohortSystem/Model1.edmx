@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="COHORTDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="COHORTDBModelStoreContainer">
+          <EntitySet Name="tblUserDetails" EntityType="COHORTDBModel.Store.tblUserDetails" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="tblUserDetails">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DeptID" Type="int" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" />
+          <Property Name="FirstName" Type="varchar" MaxLength="50" />
+          <Property Name="MiddleName" Type="varchar" MaxLength="50" />
+          <Property Name="EmailAddress" Type="varchar" MaxLength="50" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Gender" Type="varchar" MaxLength="6" />
+          <Property Name="Position" Type="varchar" MaxLength="50" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="COHORTDBModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="COHORTDBEntities">
+          <EntitySet Name="tblUserDetails" EntityType="COHORTDBModel.tblUserDetails" />
+        </EntityContainer>
+        <EntityType Name="tblUserDetails">
+          <Key>
+            <PropertyRef Name="UserID" /></Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="DeptID" Type="Int32" Nullable="true" />
+          <Property MaxLength="50" Unicode="false" FixedLength="false" Name="LastName" Type="String" />
+          <Property MaxLength="50" Unicode="false" FixedLength="false" Name="FirstName" Type="String" />
+          <Property MaxLength="50" Unicode="false" FixedLength="false" Name="MiddleName" Type="String" />
+          <Property MaxLength="50" Unicode="false" FixedLength="false" Name="EmailAddress" Type="String" />
+          <Property MaxLength="50" Unicode="false" FixedLength="false" Name="UserName" Type="String" />
+          <Property MaxLength="50" Unicode="false" FixedLength="false" Name="Password" Type="String" />
+          <Property MaxLength="6" Unicode="false" FixedLength="false" Name="Gender" Type="String" />
+          <Property MaxLength="50" Unicode="false" FixedLength="false" Name="Position" Type="String" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="COHORTDBModelStoreContainer" CdmEntityContainer="COHORTDBEntities">
+          <EntitySetMapping Name="tblUserDetails">
+            <EntityTypeMapping TypeName="IsTypeOf(COHORTDBModel.tblUserDetails)">
+              <MappingFragment StoreEntitySet="tblUserDetails">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="COHORTDBModel.tblUserDetails" PointX="0.75" PointY="0.75" Width="1.5" Height="2.9417936197916665" IsExpanded="true" /></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

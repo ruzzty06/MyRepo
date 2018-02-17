@@ -1,0 +1,218 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CohortSystem
+</name>
+</assembly>
+<members>
+<member name="P:CohortSystem.My._Dialogs.LineBreakChar">
+	<summary>
+ Defaults to Tilde, used for breaking lines in dialogs
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CohortSystem.My._Dialogs.Question(System.String)">
+	<summary>
+ Ask question with NO as the default button
+ </summary>
+	<param name="Text"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CohortSystem.My._Dialogs.Question(System.String,System.String,Microsoft.VisualBasic.MsgBoxResult)">
+	<summary>
+ Ask question
+ </summary>
+	<param name="Text">Question to ask</param>
+	<param name="Title">Text for dialog caption</param>
+	<param name="DefaultButton">Which button is the default</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CohortSystem.My._Dialogs.InformationDialog(System.String)">
+	<summary>
+ Shows text in dialog with information icon
+ </summary>
+	<param name="Text">Message to display</param>
+	<remarks></remarks>
+</member><member name="M:CohortSystem.My._Dialogs.InformationDialog(System.String,System.String)">
+	<summary>
+ Shows text in dialog with information icon
+ </summary>
+	<param name="Text">Message to display</param>
+	<param name="Title"></param>
+	<remarks></remarks>
+</member><member name="M:CohortSystem.My._Dialogs.ExceptionDialog(System.String)">
+	<summary>
+ For displaying error/exception text with Error icon
+ </summary>
+	<param name="Text"></param>
+	<remarks></remarks>
+</member><member name="M:CohortSystem.My._Dialogs.ExceptionDialog(System.String,System.String)">
+	<summary>
+ For displaying error/exception text with Error icon
+ </summary>
+	<param name="Text"></param>
+	<param name="Title"></param>
+	<remarks></remarks>
+</member><member name="M:CohortSystem.My._Dialogs.ExceptionDialog(System.Exception,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="ex"></param>
+	<param name="Text"></param>
+	<param name="Title"></param>
+	<remarks>
+	</remarks>
+</member><member name="T:CohortSystem.My._Dialogs">
+	<summary>
+ Contains wrappers for common dialog operations where the intent is to keep
+ method based and easy to maintain.
+ </summary>
+	<remarks>
+ I did one Dialog using CreateLineBreaks to show that you can be
+ a tad lazy in how to create multiple lines of text in a dialog.
+ All the others could easy include this too.
+ </remarks>
+</member><member name="T:CohortSystem.Reports.getUsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CohortSystem.Reports.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CohortSystem.Reports.getUsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CohortSystem.Reports.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CohortSystem.Reports.getUsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CohortSystem.Reports.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CohortSystem.Reports">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CohortSystem.ReportsTableAdapters.getUsersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:CohortSystem.ReportsTableAdapters.TableAdapterManager.UpdateUpdatedRows(CohortSystem.Reports,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:CohortSystem.ReportsTableAdapters.TableAdapterManager.UpdateInsertedRows(CohortSystem.Reports,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:CohortSystem.ReportsTableAdapters.TableAdapterManager.UpdateDeletedRows(CohortSystem.Reports,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:CohortSystem.ReportsTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:CohortSystem.ReportsTableAdapters.TableAdapterManager.UpdateAll(CohortSystem.Reports)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:CohortSystem.ReportsTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:CohortSystem.ReportsTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:CohortSystem.ReportsTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="M:CohortSystem.COHORTDBEntities.#ctor">
+	<summary>
+Initializes a new COHORTDBEntities object using the connection string found in the 'COHORTDBEntities' section of the application configuration file.
+</summary>
+</member><member name="M:CohortSystem.COHORTDBEntities.#ctor(System.String)">
+	<summary>
+Initialize a new COHORTDBEntities object.
+</summary>
+</member><member name="M:CohortSystem.COHORTDBEntities.#ctor(System.Data.EntityClient.EntityConnection)">
+	<summary>
+Initialize a new COHORTDBEntities object.
+</summary>
+</member><member name="P:CohortSystem.COHORTDBEntities.tblUserDetails">
+	<summary>
+There are no comments for tblUserDetails in the schema.
+</summary>
+</member><member name="M:CohortSystem.COHORTDBEntities.AddTotblUserDetails(CohortSystem.tblUserDetails)">
+	<summary>
+There are no comments for tblUserDetails in the schema.
+</summary>
+</member><member name="T:CohortSystem.COHORTDBEntities">
+	<summary>
+There are no comments for COHORTDBEntities in the schema.
+</summary>
+</member><member name="M:CohortSystem.tblUserDetails.CreatetblUserDetails(System.Int32)">
+	<summary>
+Create a new tblUserDetails object.
+</summary>
+	<param name="userID">Initial value of UserID.</param>
+</member><member name="P:CohortSystem.tblUserDetails.UserID">
+	<summary>
+There are no comments for Property UserID in the schema.
+</summary>
+</member><member name="P:CohortSystem.tblUserDetails.DeptID">
+	<summary>
+There are no comments for Property DeptID in the schema.
+</summary>
+</member><member name="P:CohortSystem.tblUserDetails.LastName">
+	<summary>
+There are no comments for Property LastName in the schema.
+</summary>
+</member><member name="P:CohortSystem.tblUserDetails.FirstName">
+	<summary>
+There are no comments for Property FirstName in the schema.
+</summary>
+</member><member name="P:CohortSystem.tblUserDetails.MiddleName">
+	<summary>
+There are no comments for Property MiddleName in the schema.
+</summary>
+</member><member name="P:CohortSystem.tblUserDetails.EmailAddress">
+	<summary>
+There are no comments for Property EmailAddress in the schema.
+</summary>
+</member><member name="P:CohortSystem.tblUserDetails.UserName">
+	<summary>
+There are no comments for Property UserName in the schema.
+</summary>
+</member><member name="P:CohortSystem.tblUserDetails.Password">
+	<summary>
+There are no comments for Property Password in the schema.
+</summary>
+</member><member name="P:CohortSystem.tblUserDetails.Gender">
+	<summary>
+There are no comments for Property Gender in the schema.
+</summary>
+</member><member name="P:CohortSystem.tblUserDetails.Position">
+	<summary>
+There are no comments for Property Position in the schema.
+</summary>
+</member><member name="T:CohortSystem.tblUserDetails">
+	<summary>
+There are no comments for COHORTDBModel.tblUserDetails in the schema.
+</summary>
+	<KeyProperties>
+UserID
+</KeyProperties>
+</member>
+</members>
+</doc>
