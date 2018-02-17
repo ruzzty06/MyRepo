@@ -13,7 +13,12 @@
         If (user Is Nothing) Then
             MsgBox("Login failed", MsgBoxStyle.Exclamation, "Failed")
         Else
-            Form1.Show()
+            If user.Position = "Dean" Then
+                AcademicHead.Show()
+                'Me.Hide()
+            ElseIf user.Position = "Administrator" Then
+                UserMaintenance.Show()
+            End If
             Me.Hide()
 
         End If

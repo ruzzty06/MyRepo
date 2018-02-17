@@ -116,6 +116,12 @@
     <Compile Include="ActionPlanMaint.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DismissedGraphSpec.Designer.vb">
+      <DependentUpon>DismissedGraphSpec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DismissedGraphSpec.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DismissedSpec.Designer.vb">
       <DependentUpon>DismissedSpec.vb</DependentUpon>
     </Compile>
@@ -124,10 +130,10 @@
     </Compile>
     <Compile Include="Data\SQL.vb" />
     <Compile Include="Data\DataOperations.vb" />
-    <Compile Include="DimissedOnleaveAll.Designer.vb">
-      <DependentUpon>DimissedOnleaveAll.vb</DependentUpon>
+    <Compile Include="DismissedOnleaveAll.Designer.vb">
+      <DependentUpon>DismissedOnleaveAll.vb</DependentUpon>
     </Compile>
-    <Compile Include="DimissedOnleaveAll.vb">
+    <Compile Include="DismissedOnleaveAll.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DismissedGraph.Designer.vb">
@@ -137,11 +143,11 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Extensions\ExtensionMethods.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="UserMaintenance.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="UserMaintenance.Designer.vb">
+      <DependentUpon>UserMaintenance.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm1.Designer.vb">
@@ -208,17 +214,20 @@
     <EmbeddedResource Include="ActionPlanMaint.resx">
       <DependentUpon>ActionPlanMaint.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DismissedGraphSpec.resx">
+      <DependentUpon>DismissedGraphSpec.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DismissedSpec.resx">
       <DependentUpon>DismissedSpec.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DimissedOnleaveAll.resx">
-      <DependentUpon>DimissedOnleaveAll.vb</DependentUpon>
+    <EmbeddedResource Include="DismissedOnleaveAll.resx">
+      <DependentUpon>DismissedOnleaveAll.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DismissedGraph.resx">
       <DependentUpon>DismissedGraph.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="UserMaintenance.resx">
+      <DependentUpon>UserMaintenance.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm1.resx">
       <DependentUpon>LoginForm1.vb</DependentUpon>

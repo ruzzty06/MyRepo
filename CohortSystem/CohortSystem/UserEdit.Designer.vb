@@ -160,7 +160,7 @@ Partial Class UserEdit
         '
         Me.cboPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboPosition.FormattingEnabled = True
-        Me.cboPosition.Items.AddRange(New Object() {"Administrator", "Registrar"})
+        Me.cboPosition.Items.AddRange(New Object() {"Administrator", "Registrar", "Dean"})
         Me.cboPosition.Location = New System.Drawing.Point(108, 204)
         Me.cboPosition.Name = "cboPosition"
         Me.cboPosition.Size = New System.Drawing.Size(217, 21)

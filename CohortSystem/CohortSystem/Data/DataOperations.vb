@@ -4,7 +4,7 @@ Public Class DataOperations
     Private APTable As DataTable
 
     Private UserTable As DataTable
-    Public Function getDismissed(ByVal school As String) As DataTable
+    Public Function getDismissed(ByVal school As Integer) As DataTable
 
         Dim dt As New DataTable
         Using cn As New SqlConnection With {.ConnectionString = My.Settings.ConnectionString}
@@ -13,7 +13,7 @@ Public Class DataOperations
                 "left join dbo.tblStudent s on d.StudentID=s.studentid left join program p " & _
 "on d.programid=p.programid left join apmaintenance r on d.Reasonid=r.apid " & _
 "left join tblSchool sc on d.schoolid=sc.schoolid "
-                If Not String.IsNullOrEmpty(school) Then
+                If school > 0 Then
                     cmd.CommandText += " where sc.schoolid=@schoolid"
                     cmd.Parameters.AddWithValue("@schoolid", school)
                 End If
@@ -111,6 +111,25 @@ Public Class DataOperations
             Using cmd As New SqlCommand With {.Connection = cn}
                 cmd.CommandText = "getDismissedReportGraph"
                 cmd.CommandType = CommandType.StoredProcedure
+                cn.Open()
+                Dim da As New SqlDataAdapter(cmd)
+                Dim ds As New DataSet
+                da.Fill(ds)
+                If (ds.Tables.Count > 0) Then
+                    dt = ds.Tables(0)
+                End If
+            End Using
+        End Using
+        Return dt
+    End Function
+    Public Function GetDismissedGraphBySchool(ByVal sID As Integer) As DataTable
+
+        Dim dt As New DataTable
+        Using cn As New SqlConnection With {.ConnectionString = My.Settings.ConnectionString}
+            Using cmd As New SqlCommand With {.Connection = cn}
+                cmd.CommandText = "getDismissedReportGraphBySchool"
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.AddWithValue("@schoolid", sID)
                 cn.Open()
                 Dim da As New SqlDataAdapter(cmd)
                 Dim ds As New DataSet

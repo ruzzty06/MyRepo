@@ -85,7 +85,7 @@ Partial Class AcademicHead
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(160, 46)
         Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Preview Migration and Retention Report"
+        Me.Button1.Text = "Dismissed / On Leave Rate"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2

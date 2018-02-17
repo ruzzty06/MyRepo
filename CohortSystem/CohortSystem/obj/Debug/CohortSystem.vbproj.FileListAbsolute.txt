@@ -3,7 +3,6 @@ C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\bin\Debug\CohortSystem.pdb
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\bin\Debug\CohortSystem.xml
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.Form1.resources
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.Resources.resources
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.vbproj.GenerateResource.Cache
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.exe
@@ -16,5 +15,7 @@ C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.DismissedGraph.resources
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.ReportViewer.resources
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.trial.resources
-C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.DimissedOnleaveAll.resources
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.DismissedSpec.resources
+C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.DismissedGraphSpec.resources
+C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.UserMaintenance.resources
+C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.DismissedOnleaveAll.resources

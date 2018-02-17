@@ -35,9 +35,13 @@ Public Class DismissedGraph
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         If cboSchool.SelectedValue <> "" Then
             DismissedSpec.school = DirectCast(cboSchool.SelectedItem, KeyValuePair(Of String, String)).Key
-            DismissedSpec.Text = "Dismissed / On Leave Rate(" + DirectCast(cboSchool.SelectedItem, KeyValuePair(Of String, String)).Value + ")"
-
+            DismissedSpec.SchoolCode = DirectCast(cboSchool.SelectedItem, KeyValuePair(Of String, String)).Value
+            
             DismissedSpec.ShowDialog()
         End If
+    End Sub
+
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+        Me.Dispose()
     End Sub
 End Class

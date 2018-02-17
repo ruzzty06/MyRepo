@@ -22,11 +22,11 @@ Partial Class DismissedGraph
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea
-        Dim CustomLabel5 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel
-        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend
-        Dim Series9 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series
-        Dim Series10 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series
+        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea
+        Dim CustomLabel6 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel
+        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend
+        Dim Series11 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series
+        Dim Series12 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series
         Me.Button7 = New System.Windows.Forms.Button
         Me.Button8 = New System.Windows.Forms.Button
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart
@@ -55,33 +55,33 @@ Partial Class DismissedGraph
         '
         'Chart1
         '
-        ChartArea5.AxisX.CustomLabels.Add(CustomLabel5)
-        ChartArea5.AxisX.IsLabelAutoFit = False
-        ChartArea5.AxisX.LabelStyle.Angle = 30
-        ChartArea5.AxisX.MajorGrid.Enabled = False
-        ChartArea5.AxisX.MajorTickMark.Enabled = False
-        ChartArea5.AxisX.MinorTickMark.Enabled = True
-        ChartArea5.AxisX2.IsLabelAutoFit = False
-        ChartArea5.AxisX2.LabelStyle.Angle = 30
-        ChartArea5.CursorX.Interval = 0
-        ChartArea5.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea5)
-        Legend5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
-        Legend5.Name = "Legend2"
-        Me.Chart1.Legends.Add(Legend5)
+        ChartArea6.AxisX.CustomLabels.Add(CustomLabel6)
+        ChartArea6.AxisX.IsLabelAutoFit = False
+        ChartArea6.AxisX.LabelStyle.Angle = 30
+        ChartArea6.AxisX.MajorGrid.Enabled = False
+        ChartArea6.AxisX.MajorTickMark.Enabled = False
+        ChartArea6.AxisX.MinorTickMark.Enabled = True
+        ChartArea6.AxisX2.IsLabelAutoFit = False
+        ChartArea6.AxisX2.LabelStyle.Angle = 30
+        ChartArea6.CursorX.Interval = 0
+        ChartArea6.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea6)
+        Legend6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
+        Legend6.Name = "Legend2"
+        Me.Chart1.Legends.Add(Legend6)
         Me.Chart1.Location = New System.Drawing.Point(12, 10)
         Me.Chart1.Name = "Chart1"
-        Series9.ChartArea = "ChartArea1"
-        Series9.IsValueShownAsLabel = True
-        Series9.Legend = "Legend2"
-        Series9.Name = "Series1"
-        Series10.ChartArea = "ChartArea1"
-        Series10.CustomProperties = "DrawSideBySide=True"
-        Series10.Legend = "Legend2"
-        Series10.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square
-        Series10.Name = "Series2"
-        Me.Chart1.Series.Add(Series9)
-        Me.Chart1.Series.Add(Series10)
+        Series11.ChartArea = "ChartArea1"
+        Series11.IsValueShownAsLabel = True
+        Series11.Legend = "Legend2"
+        Series11.Name = "Series1"
+        Series12.ChartArea = "ChartArea1"
+        Series12.CustomProperties = "DrawSideBySide=True"
+        Series12.Legend = "Legend2"
+        Series12.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square
+        Series12.Name = "Series2"
+        Me.Chart1.Series.Add(Series11)
+        Me.Chart1.Series.Add(Series12)
         Me.Chart1.Size = New System.Drawing.Size(590, 315)
         Me.Chart1.TabIndex = 9
         Me.Chart1.Text = "Chart1"
