@@ -4,15 +4,19 @@ Public Class DataOperations
     Private APTable As DataTable
 
     Private UserTable As DataTable
-    Public Function getDismissed() As DataTable
-        
+    Public Function getDismissed(ByVal school As String) As DataTable
+
         Dim dt As New DataTable
         Using cn As New SqlConnection With {.ConnectionString = My.Settings.ConnectionString}
             Using cmd As New SqlCommand With {.Connection = cn}
-                cmd.CommandText = "Select s.StudentNumber,s.FirstName+' '+s.Middlename+' '+s.Lastname as StudentName,p.ProgramCode as Program,d.DateOfDismissal,r.Reason,sc.School from tblDismissed d " & _
+                cmd.CommandText = "Select s.StudentNumber,s.FirstName+' '+s.Middlename+' '+s.Lastname as StudentName,p.ProgramCode as Program,d.DateOfDismissal,r.Reason,sc.SchoolCode as School from tblDismissed d " & _
                 "left join dbo.tblStudent s on d.StudentID=s.studentid left join program p " & _
 "on d.programid=p.programid left join apmaintenance r on d.Reasonid=r.apid " & _
-"left join tblSchool sc on d.schoolid=sc.schoolid"
+"left join tblSchool sc on d.schoolid=sc.schoolid "
+                If Not String.IsNullOrEmpty(school) Then
+                    cmd.CommandText += " where sc.schoolid=@schoolid"
+                    cmd.Parameters.AddWithValue("@schoolid", school)
+                End If
                 cn.Open()
                 Dim da As New SqlDataAdapter(cmd)
                 Dim ds As New DataSet
@@ -82,6 +86,41 @@ Public Class DataOperations
         Me.APTable.AcceptChanges()
 
         Return APTable
+    End Function
+    Public Function GetSchools() As DataTable
+       
+        Dim dt As New DataTable
+        Using cn As New SqlConnection With {.ConnectionString = My.Settings.ConnectionString}
+            Using cmd As New SqlCommand With {.Connection = cn}
+                cmd.CommandText = "SELECT SchoolID, SchoolCode,School  FROM [tblSchool] ORDER BY SchoolCode"
+                cn.Open()
+                Dim da As New SqlDataAdapter(cmd)
+                Dim ds As New DataSet
+                da.Fill(ds)
+                If (ds.Tables.Count > 0) Then
+                    dt = ds.Tables(0)
+                End If
+            End Using
+        End Using
+        Return dt
+    End Function
+    Public Function GetDismissedGraph() As DataTable
+
+        Dim dt As New DataTable
+        Using cn As New SqlConnection With {.ConnectionString = My.Settings.ConnectionString}
+            Using cmd As New SqlCommand With {.Connection = cn}
+                cmd.CommandText = "getDismissedReportGraph"
+                cmd.CommandType = CommandType.StoredProcedure
+                cn.Open()
+                Dim da As New SqlDataAdapter(cmd)
+                Dim ds As New DataSet
+                da.Fill(ds)
+                If (ds.Tables.Count > 0) Then
+                    dt = ds.Tables(0)
+                End If
+            End Using
+        End Using
+        Return dt
     End Function
     Public Sub New()
 

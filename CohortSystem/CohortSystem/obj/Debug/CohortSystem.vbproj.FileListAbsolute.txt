@@ -17,3 +17,4 @@ C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.ReportViewer.resources
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.trial.resources
 C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.DimissedOnleaveAll.resources
+C:\Users\0315310\Documents\Visual Studio 2008\Projects\CohortSystem\CohortSystem\obj\Debug\CohortSystem.DismissedSpec.resources

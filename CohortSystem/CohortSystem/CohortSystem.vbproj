@@ -116,12 +116,18 @@
     <Compile Include="ActionPlanMaint.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DismissedSpec.Designer.vb">
+      <DependentUpon>DismissedSpec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DismissedSpec.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Data\SQL.vb" />
     <Compile Include="Data\DataOperations.vb" />
-    <Compile Include="DimissedOnleave.Designer.vb">
-      <DependentUpon>DimissedOnleave.vb</DependentUpon>
+    <Compile Include="DimissedOnleaveAll.Designer.vb">
+      <DependentUpon>DimissedOnleaveAll.vb</DependentUpon>
     </Compile>
-    <Compile Include="DimissedOnleave.vb">
+    <Compile Include="DimissedOnleaveAll.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DismissedGraph.Designer.vb">
@@ -202,8 +208,11 @@
     <EmbeddedResource Include="ActionPlanMaint.resx">
       <DependentUpon>ActionPlanMaint.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DimissedOnleave.resx">
-      <DependentUpon>DimissedOnleave.vb</DependentUpon>
+    <EmbeddedResource Include="DismissedSpec.resx">
+      <DependentUpon>DismissedSpec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DimissedOnleaveAll.resx">
+      <DependentUpon>DimissedOnleaveAll.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DismissedGraph.resx">
       <DependentUpon>DismissedGraph.vb</DependentUpon>
